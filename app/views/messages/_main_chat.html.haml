@@ -1,0 +1,40 @@
+.Main-chat
+  .Main-chat__group-info
+    .Main-chat__group-info__left-box
+      .Main-chat__group-info__left-box__group-name
+        new group
+      .Main-chat__group-info__left-box__group-member
+        Member : tech camp
+    .Main-chat__group-info__right-box
+      .Main-chat__group-info__right-box__edit
+        .Main-chat__group-info__right-box__edit__num
+          %a{ href: '#' , class: "Editlink"}
+            Edit
+  .Main-chat__message-list
+    .Main-chat__message-list__box
+      .Main-chat__message-list__box__name
+        .Main-chat__message-list__box__name__mar
+          hiroyuki
+        .Main-chat__message-list__box__name__date
+          2020/12/10(wed) 12:00:45
+      .Main-chat__message-list__box__message
+        What's up?
+    .Main-chat__message-list__boxa
+      .Main-chat__message-list__boxa__name
+        .Main-chat__message-list__boxa__name__mar
+          hiroyuki
+        .Main-chat__message-list__boxa__name__date
+          2020/12/10(sun) 13:00:05
+      .Main-chat__message-list__boxa__message
+        What's up?
+    
+  .Main-chat__message-form
+    .Main-chat__message-form__box
+      %form.Main-chat__message-form__box__left
+        %input.Main-chat__message-form__box__left__input{"placeholder": "type a message", "type": "text"}
+        .Main-chat__message-form__box__left__icon
+          %label.Main-chat__message-form__box__left__icon__image
+            = icon('fas', 'image', class: 'icons')
+            %input.Main-chat__message-form__box__left__icon__image__inputs{type: "file"}
+      %input.Main-chat__message-form__send{"type": "submit", "value": "Send",}
+
