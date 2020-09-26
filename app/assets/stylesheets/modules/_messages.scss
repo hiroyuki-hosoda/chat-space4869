@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+}
+
+.Main-chat {
+  width : calc(100vw - 300px);
+  
+ &__group-info {
+    background-color : #ffffff;
+    height : 100px;
+    display : flex;
+    justify-content : space-between;
+    &__left-box {
+      &__group-name {
+        padding-top : 35px;
+        padding-left : 40px;
+        font-size : 20px;
+        color : #333333;
+      }
+      &__group-member {
+        padding-top : 15px;
+        padding-left : 40px;
+        color : #999999;
+        font-size : 12px;
+      }
+    }
+    &__right-box {
+      display : flex;
+      width : 112px;
+     &__edit {
+        width : 72px;
+        height : 40px;
+        margin-top : 28px;
+        margin-right : 40px;
+        margin-bottom : calc( 100vh - 68px);
+        border : 1px solid #38aef0;
+        display : flex;
+        align-items : center;
+        &__num {
+          color : #38aef0;
+          font-size : 16px;
+          margin-left : 20px;
+          margin-right : 20px;
+          .Editlink {
+            text-decoration : none;
+          }  
+        }
+      }
+    }
+  }
+  &__message-list {
+    background-color : #fafafa;
+    height : calc(100vh - 190px);
+    &__box {
+      padding-top : 35px;
+      margin-left : 40px;
+      margin-bottom : 46px;
+      &__name {
+        display : flex;
+        
+        &__mar {
+          color : #333333;
+          font-size : 16px;
+          margin-bottom : 12px;
+          font-weight : bold;
+        }
+        &__date {
+          color : #999999;
+          font-size : 12px;
+          padding-left : 10px;
+        }
+      }
+      &__message {
+        color : #434A54;
+        font-size : 14px;
+      }
+    }
+    &__boxa {
+      margin-left : 40px;
+      margin-bottom : 46px;
+      &__name {
+        display : flex;
+        
+        &__mar {
+          color : #333333;
+          font-size : 16px;
+          margin-bottom : 12px;
+          font-weight : bold;
+        }
+        &__date {
+          color : #999999;
+          font-size : 12px;
+          padding-left : 10px;
+        }
+      }
+      &__message {
+        color : #434A54;
+        font-size : 14px;
+      }
+    }
+  }
+  &__message-form {
+    height: 90px;
+    background-color: #d2d2d2;
+    &__box{
+      display : flex;
+      justify-content: center;
+      align-items : center;
+      padding: 20px 30px 0 40px;
+      &__left {
+        position : relative;
+        width : 100%;
+        background-color : #fff;
+        display : flex;
+        position : relative;
+        &__input {
+          height : 50px;
+          padding : 0 45px 0 15px;
+          width : 100%;
+          border : none;
+        }
+        
+        &__icon {
+          height : 50px;
+          position : absolute;
+          right: 10px;
+          top: 15px;
+          &__image__inputs {
+            display : none;
+          }
+        }
+      }
+      .Main-chat__message-form__send {
+        background-color : #38aef0;
+        color : #fff;
+        font-size : 16px;
+        height : 50px;
+        margin-left : 15px;
+        padding : 0 30px;
+        border : none;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.Side-bar {
+  width : 300px;
+  
+  &__box {
+    height : 100px;
+    background-color:#253141;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__top-items {
+      background-color: #253141;
+      height: 20px;
+      width: 260px;
+      display: flex;
+      justify-content: space-between;
+      &__name {
+       color : #ffffff;
+        width : 60px;
+        font-size : 16px;
+      }
+      &__icons {
+        width : 60px;
+        display : flex;
+        justify-content : flex-end;
+        .btn--edit {
+          padding-right : 5px;
+          color : #ffffff
+        }
+        .btn--facebook {
+          color : #ffffff;
+        }
+      }
+    }
+  }
+  &__group-list {
+    height : calc(100vh - 100px );
+    background-color: #2f3e51;
+    &__box {
+       &__name {
+        padding-top : 20px;
+        color : #ffffff;
+        font-size : 15px;
+        padding-left : 20px;
+        padding-right : 20px;
+        padding-bottom : 5px;
+      }
+      &__message {
+        padding-left : 20px;
+        padding-right : 20px;
+        padding-bottom : 40px;
+        color : #ffffff;
+        font-size :11px;
+      }
+    }
+    
+  }
+}
+
+.wrapper {
+  display: flex;
+}
+
