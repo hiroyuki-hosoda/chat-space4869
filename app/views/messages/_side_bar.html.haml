@@ -3,26 +3,33 @@
     .Side-bar__box__top-items
       .Side-bar__box__top-items__name 
         = current_user.name
-      .Side-bar__box__top-items__icons
-        = link_to edit_user_path(current_user) do
-          = icon('far','edit', class: 'btn--edit')
-          = icon('fab','facebook-square', class: 'btn--facebook')
+      .Side-bar__box__top-items__iconlist
+        .Side-bar__box__top-item__iconlist__icon
+          = link_to new_group_path do
+            = icon('fas','edit', class: 'btn--edit')
+        .Side-bar__box__top-item__iconlist__icon
+          = link_to edit_user_path(current_user) do
+            = icon('fab','facebook-square', class: 'btn--facebook')
 
   .Side-bar__group-list
-    .Side-bar__group-list__box
-      .Side-bar__group-list__box__name
-        tech camp
-      .Side-bar__group-list__box__message
-        No message
-    .Side-bar__group-list__box
-      .Side-bar__group-list__box__name
-        tech camp
-      .Side-bar__group-list__box__message
-        No message
-    .Side-bar__group-list__box
-      .Side-bar__group-list__box__name
-        tech camp
-      .Side-bar__group-list__box__message
-        No message
-    
+    - current_user.groups.each do |group|
+      .Side-bar__group-list__box
+        = link_to '#' do
+          .Side-bar__group-list__box__name
+            = group.name
+          .Side-bar__group-list__box__message
+            メッセージはまだありません
+      .Side-bar__group-list__box
+        = link_to '#' do
+          .Side-bar__group-list__box__name
+            = group.name
+          .Side-bar__group-list__box__message
+            メッセージはまだありません
+      .Side-bar__group-list__box
+        = link_to '#' do
+          .Side-bar__group-list__box__name
+            = group.name
+          .Side-bar__group-list__box__message
+            No message
+      
 
