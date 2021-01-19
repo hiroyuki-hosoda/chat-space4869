@@ -41,9 +41,9 @@
           font-size : 16px;
           margin-left : 20px;
           margin-right : 20px;
-          .Editlink {
-            text-decoration : none;
-          }  
+          .Editbutton {
+          text-decoration : none;
+          }
         }
       }
     }
@@ -55,33 +55,10 @@
       padding-top : 35px;
       margin-left : 40px;
       margin-bottom : 46px;
-      &__name {
+      &__user {
         display : flex;
         
-        &__mar {
-          color : #333333;
-          font-size : 16px;
-          margin-bottom : 12px;
-          font-weight : bold;
-        }
-        &__date {
-          color : #999999;
-          font-size : 12px;
-          padding-left : 10px;
-        }
-      }
-      &__message {
-        color : #434A54;
-        font-size : 14px;
-      }
-    }
-    &__boxa {
-      margin-left : 40px;
-      margin-bottom : 46px;
-      &__name {
-        display : flex;
-        
-        &__mar {
+        &__name {
           color : #333333;
           font-size : 16px;
           margin-bottom : 12px;
@@ -99,38 +76,43 @@
       }
     }
   }
+ 
+  
   &__message-form {
+    display: flex;
     height: 90px;
     background-color: #d2d2d2;
-    &__box{
-      display : flex;
-      justify-content: center;
-      align-items : center;
-      padding: 20px 30px 0 40px;
-      &__left {
-        position : relative;
-        width : 100%;
+    justify-content: center;
+    align-items: center;
+    .Form {
+      display: flex;
+    }
+    
+      &__box {
+        width : 950px;
         background-color : #fff;
         display : flex;
         position : relative;
-        &__input {
+        height: 50px;
+       
+        .inputContent {
           height : 50px;
           padding : 0 45px 0 15px;
           width : 100%;
           border : none;
         }
         
-        &__icon {
+        .inputImage {
           height : 50px;
           position : absolute;
           right: 10px;
           top: 15px;
-          &__image__inputs {
+          .Hidden {
             display : none;
           }
         }
       }
-      .Main-chat__message-form__send {
+      .Form__submit {
         background-color : #38aef0;
         color : #fff;
         font-size : 16px;
@@ -140,9 +122,9 @@
         border : none;
         margin-right: 20px;
       }
-    }
-  }
+  }  
 }
+
 
 .Side-bar {
   width : 300px;
@@ -172,7 +154,7 @@
           padding-right : 5px;
           color : #ffffff
         }
-        .btn--facebook {
+        .btn--cog {
           color : #ffffff;
         }
       }
@@ -205,4 +187,3 @@
 .wrapper {
   display: flex;
 }
-
